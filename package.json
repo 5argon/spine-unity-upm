@@ -1,0 +1,10 @@
+{
+    "name": "com.esotericsoftware.spine",
+    "displayName": "Spine",
+    "version": "3.7.0",
+    "unity": "2019.1",
+    "description": "2D animation for games.",
+    "keywords": [
+        "animation"
+    ]
+}
