@@ -45,6 +45,15 @@ namespace Spine.Unity.Playables {
 			mixerBehaviour.trackIndex = this.trackIndex;
 			return scriptPlayable;
 		}
+
+        public override void GatherProperties(PlayableDirector director, IPropertyCollector driver)
+		{
+            SkeletonAnimation skeletonAnimation = (SkeletonAnimation)director.GetGenericBinding(this);
+			if(skeletonAnimation != null)
+			{
+				driver.AddFromComponent(skeletonAnimation.gameObject, skeletonAnimation);
+			}
+		}
 	}
 }
 #endif
